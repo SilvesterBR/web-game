@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <script src="./game.js"></script>
+    <link rel="stylesheet" type="text/css" href="./game.css">
+    <title>Space Game</title>
+</head>
+<body>
+    <div id="alert" class="alert">
+        <div class="alert_content">
+            <div class="alert_border">
+                <span id="alert_close"class="alert_close">&times;</span>
+                <h1 id="alert_title"class="alert_title"></h1>
+                <h2 id="alert_message"class="alert_message"></h2>
+                <input type="button" class="play_again" id="play_again" value="Play Again">
+            </div>    
+        </div>
+    </div>
+    <div class="game">
+        <table class="game_board" id="game_board"></table>
+        <div class="stats">
+            <div class="round">
+                <label >Round : </label><label id="round_value">1</label>     
+            </div>
+
+            <div class="mines">
+                <label >Inactive Mines : </label><label id="inactive_value">0</label>
+            </div>
+            <div class="robots">
+                <label >Robots : </label><label id="robot_value">0</label>
+            </div>
+            <br>
+            <label class = "message" style="color:brown;" id="message_info"></label>
+            <input class="stage" type="button" id="stage" value="End 'Setup Stage'">
+        </div>
+    </div>
+</body>
+</html>
